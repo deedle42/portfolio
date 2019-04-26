@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin-top: 50px;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #f2ffe5;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+    float: right;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#welcome-section {
+    min-height: 55vh;
+    padding-top: 45vh;
+    background-color: #f2ffe5;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#projects {
+    height: 100vh;
+}
+
+.project-tile {
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 50px 5px 5px 5px;
+    padding: 10px;
+}
+
+#project-title {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+#contact {
+    height: 75vh;
+    margin-top: 40px;
+    padding-top: 200px;
+    text-align: center;
+    background-color: #ffe5f2;
+}
+
+#contact-info {
+    margin-top: 50px;
+}
+
+#contact-info a {
+    border: 2px solid #e498ff;
+    border-radius: 100%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 35px 45px 35px;
+    line-height: 100px;
+    background-color: #ffe5e5;
+}
