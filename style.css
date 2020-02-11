@@ -5,91 +5,131 @@
 
 a {
     text-decoration: none;
-    color: black;
 }
 
-body {
-    margin-top: 50px;
-}
-
-img {
-    width: 300px;
-    height: 250px;
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    height: 50px;
+/* For mobile phones: */
+[class*="col-"] {
     width: 100%;
-    background-color: #f2ffe5;
-}
+  }
 
-ul {
+  ul {
     list-style-type: none;
     margin: 0;
-    padding: 15px 0 0 0;
-    float: right;
-}
-
-li {
-    display: inline;
-    padding: 10px;
-    margin: 10px;
-}
-
-#welcome-section {
-    min-height: 55vh;
-    padding-top: 45vh;
-    background-color: #f2ffe5;
+    padding: 0;
+    width: 100%;
+    background-color: #000;
     text-align: center;
+    position: fixed;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
 }
 
-#projects {
+.welcome-section {
+    background-color: lightblue;
     height: 100vh;
 }
 
-.project-tile {
-    width: 40%;
-    height: 300px;
-    border: 1px solid black;
+.welcome-heading {
+    padding-top: 60%;
     text-align: center;
-    margin: 50px 5px 5px 5px;
+}
+
+.welcome-sub {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.about {
+    background-color: blanchedalmond;
+    padding-top: 40%;
+    height: 70vh;
+}
+
+.about-heading {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.about-body {
+    text-align: center;
+    margin: 0 15%;
+    line-height: 1.3em;
+}
+
+.projects {
+    background-color: darkseagreen;
+    padding-top: 40%;
+}
+
+.projects-heading {
+    text-align: center;
+    padding-bottom: 10%;
+}
+.projects-tiles {
+    text-align: center;
+}
+
+.card {
+    padding: 10% 0;
+}
+
+.card-image {
+    width: 20%;
+}
+
+.card-title {
     padding: 10px;
+    color: black;
 }
 
-#project-title {
-    border-top: 1px solid black;
-    padding-top: 20px;
-}
-
-#contact {
-    height: 75vh;
-    margin-top: 40px;
-    padding-top: 200px;
+.contact {
+    background-color: khaki;
+    padding-top: 40%;
     text-align: center;
-    background-color: #ffe5f2;
+    height: 70vh;
 }
 
-#contact-info {
-    margin-top: 50px;
+.contact-heading {
+    padding-bottom: 10%;
 }
 
-#contact-info a {
-    border: 2px solid #e498ff;
-    border-radius: 100%;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 0 35px 45px 35px;
-    line-height: 100px;
-    background-color: #ffe5e5;
+.contact-icons a {
+    padding: 5%;
+    color: black;
 }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    ul {
+        display: flex;
+        width: 100%;
+    }
+
+    li {
+        margin: 1em 1.5em;
+    }
+
+    .welcome-section {
+        padding-top: 15%;
+    }
+
+
+  }
+

@@ -1,68 +1,74 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Joe Himes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/de7c2711b4.js" crossorigin="anonymous"></script>
+        <title>Joe Himes</title>
     </head>
     <body>
-
-        <nav id="navbar">
+        <nav class="navabar col-12" id="navbar">
             <ul>
-                <li><a href="#welcome-section">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-link"><a class="col-3" href="#welcome-section">Home</a></li>
+                <li class="nav-link"><a class="col-3" href="#about">About</a></li>
+                <li class="nav-link"><a class="col-3" href="#projects">Projects</a></li>
+                <li class="nav-link"><a class="col-3" href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <div id="welcome-section">
-            <h1>Hello, I'm Joe</h1>
-            <h3>a web developer</h3>
+        <div class="welcome-section" id="welcome-section">
+            <h1 class="welcome-heading">Hello, I'm Joe</h1>
+            <h3 class="welcome-sub">a web developer</h3>
         </div>
 
-        <div id="projects" class="flex-container">
-            <div class="project-tile">
-                <div id="tribute">
-                    <a href="https://deedle42.github.io/tribute/">
-                        <img src="tribute.png">
-                        <p id="project-title">Tribute Page</p>
+        <div class="about" id="about">
+            <h1 class="about-heading">About</h1>
+            <p class="about-body">Self-taught developer seeking an entry-level Software Engineer position. Currently learning web development to start a new career. Focusing on HTML, CSS, Ruby on Rails, and JavaScript with about 1 year of experience.</p>
+        </div>
+
+        <div class="projects" id="projects">
+            <h1 class="projects-heading">Projects</h1>
+            <div class="projects-tiles">
+                <div class="card col-3">
+                    <a href="https://joehimes.github.io/tribute/" target="_blank">
+                        <img class="card-image" src="tribute-image.png" alt="tribute page">
+                        <h1 class="card-title">Tribute Page</h1>
                     </a>
                 </div>
-            </div>
-            <div class="project-tile">
-                <div id="survey">
-                    <a href="https://deedle42.github.io/survey/">
-                        <img src="survey.png">
-                        <p id="project-title">Survey Form</p>
+
+                <div class="card col-3">
+                    <a href="https://joehimes.github.io/survey/" target="_blank">
+                        <img class="card-image" src="survey-image.png" alt="survey page">
+                        <h1 class="card-title">Survey Form</h1>
                     </a>
                 </div>
-            </div>
-            <div class="project-tile">
-                <div id="product">
-                    <a href="https://deedle42.github.io/product/">
-                        <img src="product.png">
-                        <p id="project-title">Product Landing Page</p>
+
+                <div class="card col-3">
+                    <a href="https://joehimes.github.io/product-landing-page/" target="_blank">
+                        <img class="card-image" src="product-image.png" alt="product landing page">
+                        <h1 class="card-title">Product Landing Page</h1>
                     </a>
                 </div>
-            </div>
-            <div class="project-tile">
-                <div id="technical">
-                    <a href="https://deedle42.github.io/technical/">
-                        <img src="documentation.png">
-                        <p id="project-title">Technical Documentation Page</p>
+
+                <div class="card col-3">
+                    <a href="https://joehimes.github.io/documentation/" target="_blank">
+                        <img class="card-image" src="doc-image.png" alt="documentation page">
+                        <h1 class="card-title">Technical Documentation</h1>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div id="contact">
-            <h1>Let's get a coffee sometime</h1>
-            <div id="contact-info">
-                <a href="https://github.com/deedle42" id="profile-link" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/joseph-himes-7a4238101/" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com/deedle42" target="_blank">Twitter</a>
-                <a href="mailto: joehimes42@gmail.com">Email</a>
+        <div class="contact" id="contact">
+            <h1 class="contact-heading">Let's Get Coffee!</h1>
+            <div class="contact-icons">
+                <a href="mailto: joehimes42@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
+                <a href="https://github.com/Joehimes" target="_blank"><i class="fab fa-github fa-3x"></i></a>
             </div>
         </div>
+
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
