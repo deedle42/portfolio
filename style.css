@@ -127,9 +127,62 @@ li a {
     }
 
     .welcome-section {
+        height: 100vh;
+    }
+
+    .welcome-heading {
         padding-top: 15%;
     }
 
+    .welcome-sub {
+        padding-top: 5%;
+    }
 
+    .about {
+        padding-top: 10%;
+        height: 100vh;
+    }
+
+    .about-heading {
+        padding-bottom: 5%;
+    }
+
+    .about-body {
+        margin: 0 30%;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .projects {
+        padding-top: 10%;
+        height: 100vh;
+    }
+    
+    .projects-tiles {
+        display: flex;
+    }
+    
+    .card {
+        padding: 0;
+    }
+
+    .card-image {
+        width: 30%;
+        height: 150px;
+    }
+
+    .contact {
+        padding-top: 10%;
+        height: 100vh;
+    }
+    
+    .contact-heading {
+        padding-bottom: 5%;
+    }
+    
+    .contact-icons a {
+        padding: 3%;
+    }    
+        
   }
 
