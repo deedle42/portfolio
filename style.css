@@ -1,188 +1,196 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-
-  ul {
+/* Navigation */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     width: 100%;
-    background-color: #000;
-    text-align: center;
     position: fixed;
+    height: 10%;
+    background-color: white;
 }
 
-li a {
-    display: block;
-    padding: 10px 0;
-    color: white;
+.nav-link {
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
 }
 
+@media screen and (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+}
+
+/* Intro */
 .welcome-section {
-    background-color: lightblue;
+    width:100%;
     height: 100vh;
+    text-align: center;
+    margin-bottom: 120px;
 }
 
 .welcome-heading {
-    padding-top: 60%;
-    text-align: center;
+    color: white;
+    padding-top: 30%;
+    font-size: 80px;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0;
 }
 
 .welcome-sub {
-    padding-top: 10%;
-    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 30px;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0;
 }
 
+/* About */
 .about {
-    background-color: blanchedalmond;
-    padding-top: 40%;
-    height: 70vh;
+    max-width: 960px;
+    padding: 70px 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .about-heading {
+    font-size: 40px;
+    padding-bottom: 60px;
     text-align: center;
-    padding-bottom: 10%;
+    /* animation-name: fadeInDown;
+    animation-duration: 2s; */
 }
 
-.about-body {
-    text-align: center;
-    margin: 0 15%;
-    line-height: 1.3em;
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: left;
+    margin-right: -15px;
+    margin-left: -15px;
+    line-height: 1.5;
 }
 
+.fadeInUp {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* animation-name: fadeInUp;
+    animation-duration: 2s; */
+}
+
+.fadeInUp p {
+    font-size: 1.1em;
+    padding-bottom: 15px;
+}
+
+.skills {
+    text-align: right;
+}
+
+.skills li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+/* Projects */
 .projects {
-    background-color: darkseagreen;
-    padding-top: 40%;
+    padding: 70px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ecfbfc;
 }
 
 .projects-heading {
     text-align: center;
-    padding-bottom: 10%;
+    font-size: 40px;
+    padding-bottom: 30px;
 }
+
 .projects-tiles {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
-    padding: 10% 0;
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
 }
 
 .card-image {
-    width: 20%;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .card-title {
-    padding: 10px;
-    color: black;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0 ,0);
+    }
 }
 
 .contact {
-    background-color: khaki;
-    padding-top: 40%;
+    max-width: 960px;
+    height: 80vh;
+    margin: 60px auto;
+    padding-top: 100px;
     text-align: center;
-    height: 70vh;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
 }
 
 .contact-heading {
-    padding-bottom: 10%;
+    font-size: 40px;
+    padding-bottom: 60px;
 }
 
-.contact-icons a {
-    padding: 5%;
-    color: black;
+.contact-icons i {
+    padding: 20px;
 }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
-    ul {
-        display: flex;
-        width: 100%;
-    }
-
-    li {
-        margin: 1em 1.5em;
-    }
-
-    .welcome-section {
-        height: 100vh;
-    }
-
-    .welcome-heading {
-        padding-top: 15%;
-    }
-
-    .welcome-sub {
-        padding-top: 5%;
-    }
-
-    .about {
-        padding-top: 10%;
-        height: 100vh;
-    }
-
-    .about-heading {
-        padding-bottom: 5%;
-    }
-
-    .about-body {
-        margin: 0 30%;
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
-
-    .projects {
-        padding-top: 10%;
-        height: 100vh;
-    }
-    
-    .projects-tiles {
-        display: flex;
-    }
-    
-    .card {
-        padding: 0;
-    }
-
-    .card-image {
-        width: 30%;
-        height: 150px;
-    }
-
-    .contact {
-        padding-top: 10%;
-        height: 100vh;
-    }
-    
-    .contact-heading {
-        padding-bottom: 5%;
-    }
-    
-    .contact-icons a {
-        padding: 3%;
-    }    
-        
-  }
-
