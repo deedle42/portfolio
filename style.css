@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation */
@@ -21,6 +22,12 @@
     text-decoration: none;
     color: black;
     font-size: 25px;
+    font-weight: 300;
+    opacity: .25;
+}
+
+.nav-link:hover {
+    opacity: .75;
 }
 
 @media screen and (max-width: 640px) {
@@ -204,6 +211,11 @@ main {
 .contact a {
     text-decoration: none;
     color: black;
+    opacity: .5;
+}
+
+.contact a:hover {
+    opacity: .75;
 }
 
 .contact-heading {
